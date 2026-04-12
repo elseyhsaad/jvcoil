@@ -245,43 +245,83 @@ nav a:hover{color:var(--gold)}
       <p class="text-xs tracking-widest gold-text mb-2 uppercase">تشكيلتنا</p>
       <h2 class="text-3xl md:text-4xl font-bold" style="font-family:'Montserrat',sans-serif">منتجات <span class="gold-text">JVC OIL</span></h2>
      </div><!-- Product Tabs -->
-     <div class="flex flex-wrap justify-center gap-2 mb-10" id="productTabs"><button onclick="showTab('gasoline')" class="tab-btn px-5 py-2 rounded-full text-sm font-medium gold-border text-gray-300 transition-all" data-tab="gasoline" style="background:rgba(201,168,76,.15);color:var(--gold)">زيوت البنزين</button> <button onclick="showTab('diesel')" class="tab-btn px-5 py-2 rounded-full text-sm font-medium gold-border text-gray-300 transition-all" data-tab="diesel">زيوت الديزل</button> <button onclick="showTab('fluids')" class="tab-btn px-5 py-2 rounded-full text-sm font-medium gold-border text-gray-300 transition-all" data-tab="fluids">السوائل الفنية</button>
+     <div class="flex flex-wrap justify-center gap-2 mb-10" id="productTabs"><button onclick="showTab('gasoline')" class="tab-btn px-5 py-2 rounded-full text-sm font-medium gold-border text-gray-300 transition-all" data-tab="gasoline" style="background:rgba(201,168,76,.15);color:var(--gold)">باقة المنتجات</button> <button onclick="showTab('diesel')" class="tab-btn px-5 py-2 rounded-full text-sm font-medium gold-border text-gray-300 transition-all" data-tab="diesel">باقة المنتجات 2 </button> <button onclick="showTab('fluids')" class="tab-btn px-5 py-2 rounded-full text-sm font-medium gold-border text-gray-300 transition-all" data-tab="fluids">السوائل الفنية</button>
      </div><!-- Gasoline -->
-     <div id="tab-gasoline" class="tab-content grid md:grid-cols-3 gap-6">
-      <div class="product-card rounded-2xl p-6 text-center">
-       <div class="w-20 h-28 mx-auto mb-4 rounded-lg flex items-center justify-center" style="background:linear-gradient(180deg,rgba(201,168,76,.2),rgba(201,168,76,.05))">
-        <svg width="40" height="55" viewbox="0 0 40 55">
-         <rect x="8" y="10" width="24" height="38" rx="3" fill="none" stroke="#C9A84C" stroke-width="1.5" /><rect x="12" y="4" width="16" height="8" rx="2" fill="#C9A84C" opacity=".3" /><text x="20" y="33" text-anchor="middle" fill="#C9A84C" font-size="7" font-weight="bold">
-          0W-20
-         </text>
-        </svg>
+     <div id="tab-gasoline" class="tab-content grid grid-cols-3 gap-6">
+     <div class="product-card rounded-2xl p-6 text-center cursor-pointer"
+     onclick="openModal('pop5.jpg')">
+  
+  <div class="w-20 h-28 mx-auto mb-4 rounded-lg flex items-center justify-center"
+       style=" width:120x; height:150px;">
+       
+    <img src="8.png" alt="Titanium Pro 0W-20" 
+         class="w-full h-full object-contain">
+         
+  </div>
+
+  <h3 class="font-bold gold-text text-lg">JVC OIL 15W-40</h3>
+  <p class="text-gray-500 text-xs mt-2">حماية فائقة - أداء ممتاز عند التشغيل البارد</p>
+
+</div>
+      <div class="product-card rounded-2xl p-6 text-center cursor-pointer"
+     onclick="openModal('pop6.jpg')">
+       <div class="w-20 h-28 mx-auto mb-4 rounded-lg flex items-center justify-center" style=" width: 110px;; height: 130px;">
+          <img src="7.png" alt="Titanium Pro 0W-20" 
+         class="w-full h-full object-contain">
        </div>
-       <h3 class="font-bold gold-text text-lg">Titanium Pro 0W-20</h3>
-       <p class="text-gray-500 text-xs mt-2">حماية فائقة - أداء ممتاز عند التشغيل البارد</p>
-      </div>
-      <div class="product-card rounded-2xl p-6 text-center">
-       <div class="w-20 h-28 mx-auto mb-4 rounded-lg flex items-center justify-center" style="background:linear-gradient(180deg,rgba(201,168,76,.2),rgba(201,168,76,.05))">
-        <svg width="40" height="55" viewbox="0 0 40 55">
-         <rect x="8" y="10" width="24" height="38" rx="3" fill="none" stroke="#C9A84C" stroke-width="1.5" /><rect x="12" y="4" width="16" height="8" rx="2" fill="#C9A84C" opacity=".3" /><text x="20" y="33" text-anchor="middle" fill="#C9A84C" font-size="7" font-weight="bold">
-          5W-30
-         </text>
-        </svg>
-       </div>
-       <h3 class="font-bold gold-text text-lg">Sport Series 5W-30</h3>
+       <h3 class="font-bold gold-text text-lg">JVC OIL 10W-40</h3>
        <p class="text-gray-500 text-xs mt-2">تقليل الاحتكاك - توفير في استهلاك الوقود</p>
       </div>
-      <div class="product-card rounded-2xl p-6 text-center">
-       <div class="w-20 h-28 mx-auto mb-4 rounded-lg flex items-center justify-center" style="background:linear-gradient(180deg,rgba(201,168,76,.2),rgba(201,168,76,.05))">
-        <svg width="40" height="55" viewbox="0 0 40 55">
-         <rect x="8" y="10" width="24" height="38" rx="3" fill="none" stroke="#C9A84C" stroke-width="1.5" /><rect x="12" y="4" width="16" height="8" rx="2" fill="#C9A84C" opacity=".3" /><text x="20" y="33" text-anchor="middle" fill="#C9A84C" font-size="6" font-weight="bold">
-          10W-40
-         </text>
-        </svg>
+    <div class="product-card rounded-2xl p-6 text-center cursor-pointer"
+     onclick="openModal('pop7.jpg')">
+       <div class="w-20 h-28 mx-auto mb-4 rounded-lg flex items-center justify-center" style=" width: 110px;; height: 130px;">
+       <img src="6.png" alt="Titanium Pro 0W-20" 
+         class="w-full h-full object-contain">
        </div>
-       <h3 class="font-bold gold-text text-lg">Turbo Synth 10W-40</h3>
+       <h3 class="font-bold gold-text text-lg">JVC OIL 15W-40</h3>
        <p class="text-gray-500 text-xs mt-2">أداء ثابت في درجات الحرارة العالية</p>
       </div>
-     </div><!-- Diesel -->
+      <div class="product-card rounded-2xl p-6 text-center cursor-pointer"
+     onclick="openModal('pop1.jpg')">
+  <div class="w-20 h-28 mx-auto mb-4 flex items-center justify-center"
+       style="width:110px; height:130px;">
+    <img src="5.png" class="w-full h-full object-contain">
+  </div>
+  <h3 class="font-bold gold-text text-lg">JVC OIL 5W-30</h3>
+  <p class="text-gray-500 text-xs mt-2">أداء عالي للمحركات الحديثة</p>
+</div>
+
+<div class="product-card rounded-2xl p-6 text-center cursor-pointer"
+     onclick="openModal('pop3.jpg')">
+  <div class="w-20 h-28 mx-auto mb-4 flex items-center justify-center"
+       style="width:110px; height:130px;">
+    <img src="4.png" class="w-full h-full object-contain">
+  </div>
+  <h3 class="font-bold gold-text text-lg">JVC OIL 20W-50</h3>
+  <p class="text-gray-500 text-xs mt-2">توفير استهلاك الوقود</p>
+</div>
+
+<div class="product-card rounded-2xl p-6 text-center cursor-pointer"
+     onclick="openModal('pop2.jpg')">
+  <div class="w-20 h-28 mx-auto mb-4 flex items-center justify-center"
+       style="width:110px; height:130px;">
+    <img src="3.png" class="w-full h-full object-contain">
+  </div>
+  <h3 class="font-bold gold-text text-lg">JVC OIL HD-50</h3>
+  <p class="text-gray-500 text-xs mt-2">حماية لمحركات الديزل الثقيلة</p>
+</div>
+<div class="product-card rounded-2xl p-6 text-center cursor-pointer"
+     onclick="openModal('pop1.jpg')">
+  <div class="w-20 h-28 mx-auto mb-4 flex items-center justify-center"
+       style="width:110px; height:130px;">
+    <img src="2.png" class="w-full h-full object-contain">
+  </div>
+  <h3 class="font-bold gold-text text-lg">JVC OIL 5W-30</h3>
+  <p class="text-gray-500 text-xs mt-2">حماية لمحركات الديزل الثقيلة</p>
+</div>
+     </div>
+     
+     <!-- Diesel -->
      <div id="tab-diesel" class="tab-content grid md:grid-cols-2 gap-6 hidden">
       <div class="product-card rounded-2xl p-6 text-center">
        <div class="w-20 h-28 mx-auto mb-4 rounded-lg flex items-center justify-center" style="background:linear-gradient(180deg,rgba(100,100,100,.2),rgba(100,100,100,.05))">
@@ -555,12 +595,64 @@ nav a:hover{color:var(--gold)}
      </div>
     </div>
    </section><!-- Footer -->
+   <div id="productModal" 
+     class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50">
+
+  <div class="relative">
+    
+    <!-- KAPAT BUTONU -->
+    <button onclick="closeModal()" 
+            class="absolute -top-10 right-0 text-white text-3xl">✕</button>
+
+    <!-- RESİM -->
+    <img id="modalImage" 
+         src="" 
+         class="max-w-[90vw] max-h-[80vh] rounded-lg shadow-2xl">
+<div class="mt-4 text-center">
+  <a id="whatsappBtn"
+     href="#"
+     target="_blank"
+     class="inline-block px-6 py-2 rounded-lg font-bold text-sm"
+     style="background:var(--gold);color:var(--dark)">
+     
+     📲 اطلب كمية
+     
+  </a>
+</div>
+  </div>
+</div>
    <footer class="py-6 px-4 text-center" style="border-top:1px solid rgba(201,168,76,.1)">
     <p class="text-gray-600 text-xs">© 2024 JVC OIL — Right Way Holding. جميع الحقوق محفوظة.</p>
    </footer>
   </div><!-- Scroll to top --> <button class="scroll-top-btn" id="scrollTopBtn" onclick="document.getElementById('appWrapper').scrollTo({top:0,behavior:'smooth'})"> <i data-lucide="chevron-up" style="width:20px;height:20px"></i> </button>
   <script>
 // Tab switching
+
+function openModal(imgSrc){
+  document.getElementById("productModal").classList.remove("hidden");
+  document.getElementById("productModal").classList.add("flex");
+  document.getElementById("modalImage").src = imgSrc;
+
+  // WhatsApp mesajı
+  let message = "Merhaba, bu ürün hakkında bilgi almak istiyorum: " + imgSrc;
+
+  // Numaranı buraya yaz (başında 90 olacak)
+  let phone = "905367777891";
+
+  let link = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+
+  document.getElementById("whatsappBtn").href = link;
+}
+
+function closeModal(){
+  document.getElementById("productModal").classList.add("hidden");
+  document.getElementById("productModal").classList.remove("flex");
+}
+document.getElementById("productModal").addEventListener("click", function(e){
+  if(e.target.id === "productModal"){
+    closeModal();
+  }
+});
 function showTab(tab) {
   document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
   document.getElementById('tab-' + tab).classList.remove('hidden');
